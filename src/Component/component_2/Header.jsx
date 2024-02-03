@@ -22,7 +22,7 @@ function Header() {
               className="h-12 w-auto mr-2 rounded-2xl"
             />
           </NavLink>
-          {/* <span className="text-lg font-bold">Your Ecommerce</span> */}
+          {/* <span classNameName="text-lg font-bold">Your Ecommerce</span> */}
         </div>
 
         {/* <!-- Navigation Links --> */}
@@ -42,13 +42,13 @@ function Header() {
         </nav>
 
         {/* <!-- Search Bar -->
-        <div className="flex items-center">
+        <div classNameName="flex items-center">
           <input
             type="text"
             placeholder="Search..."
-            className="bg-gray-800 text-white px-4 py-2 rounded-md focus:outline-none focus:border-blue-500"
+            classNameName="bg-gray-800 text-white px-4 py-2 rounded-md focus:outline-none focus:border-blue-500"
           />
-          <button className="ml-2 bg-blue-500 text-white px-4 py-2 rounded-md">
+          <button classNameName="ml-2 bg-blue-500 text-white px-4 py-2 rounded-md">
             Search
           </button>
         </div> */}
@@ -56,13 +56,13 @@ function Header() {
         {/* <!-- User Account Section --> */}
         <div className="flex items-center">
           <NavLink to="#" className="mr-4 hover:text-gray-300">
-            <VscAccount class="fas fa-shopping-cart text-3xl text-white-600" />
+            <VscAccount className="fas fa-shopping-cart text-3xl text-white-600" />
           </NavLink>
           <NavLink to="/cart" className="hover:text-gray-300">
-            <div class="flex justify-center back relative">
+            <div className="flex justify-center back relative">
               {" "}
-              <FaCartShopping class="fas fa-shopping-cart text-3xl text-white-600" />
-              <span class="absolute top-0 right-0 bg-blue-500 text-white rounded-full px-1 py-0.4 text-xs font-bold">
+              <FaCartShopping className="fas fa-shopping-cart text-3xl text-white-600" />
+              <span className="absolute top-0 right-0 bg-blue-500 text-white rounded-full px-1 py-0.4 text-xs font-bold">
                 {size}
               </span>
             </div>

@@ -4,7 +4,9 @@ const initialState = {
     cart:[
        
     ],
-    Item:{}
+    Item:{},
+
+    pathNavigate:[]
 }
 
 
@@ -19,11 +21,15 @@ export const Slices = createSlice({
         removeItem:(state,action)=>{
             state.cart = state.cart.filter((item)=>item.id!==action.payload)
         }
-        ,setItem:(state,action)=>{
+        , setItem:(state,action)=>{
             state.Item = action.payload;
+        },
+        setpathName:(state,action)=>{
+            state.pathNavigate = state.pathNavigate.filter((page)=>(page!=(action.payload))?page:"")
+            state.pathNavigate.push(action.payload)
         }
     }
 })
-export const {addItem,removeItem,setItem}   = Slices.actions
+export const {addItem,removeItem,setItem,setpathName}   = Slices.actions
 
 export const SliceReducer =  Slices.reducer
